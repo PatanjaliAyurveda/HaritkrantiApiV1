@@ -1,0 +1,496 @@
+2020-12-15 00:52:02.871  INFO 17536 --- [cluster-ClusterId{value='5fd78f948742f026e9e0a1c9', description='null'}-172.16.70.4:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server 172.16.70.4:27017
+
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70) ~[mongodb-driver-core-3.11.2.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128) ~[mongodb-driver-core-3.11.2.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131) ~[mongodb-driver-core-3.11.2.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.net.SocketException: Software caused connection abort: connect
+	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method) ~[na:na]
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:591) ~[na:na]
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64) ~[mongodb-driver-core-3.11.2.jar:na]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79) ~[mongodb-driver-core-3.11.2.jar:na]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65) ~[mongodb-driver-core-3.11.2.jar:na]
+	... 3 common frames omitted
+
+2020-12-15 09:47:00.420  INFO 7164 --- [restartedMain] c.b.haritkranti.ArgricultureApplication  : Starting ArgricultureApplication on DESKTOP-LEH98UK with PID 7164 (D:\workspace\haritkranti\bin\main started by User in D:\workspace\haritkranti)
+2020-12-15 09:47:00.431  INFO 7164 --- [restartedMain] c.b.haritkranti.ArgricultureApplication  : No active profile set, falling back to default profiles: default
+2020-12-15 09:47:00.554  INFO 7164 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\User\.gradle\caches\modules-2\files-2.1\org.glassfish.hk2\hk2\2.6.1\3b971d09e8b3d0a34c7b96cddb920164f99430d4\hk2-2.6.1.jar referenced one or more files that do not exist: file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/hk2-utils.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/jakarta.annotation-api.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/jakarta.inject.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/hk2-api.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/aopalliance-repackaged.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/hk2-core.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/hk2-locator.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/javassist.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/hk2-runlevel.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/class-model.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/asm.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/asm-analysis.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/asm-commons.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/asm-tree.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/asm-util.jar
+2020-12-15 09:47:00.560  INFO 7164 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-15 09:47:00.561  INFO 7164 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-15 09:47:03.097  INFO 7164 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-12-15 09:47:03.588  INFO 7164 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 480ms. Found 71 MongoDB repository interfaces.
+2020-12-15 09:47:04.717  INFO 7164 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 09:47:04.728  INFO 7164 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 09:47:04.731  INFO 7164 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@50a04ab' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 09:47:04.732  INFO 7164 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 09:47:04.737  INFO 7164 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 09:47:05.686  INFO 7164 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (http)
+2020-12-15 09:47:05.706  INFO 7164 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-15 09:47:05.706  INFO 7164 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-12-15 09:47:06.491  INFO 7164 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-15 09:47:06.492  INFO 7164 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5931 ms
+2020-12-15 09:47:07.097  INFO 7164 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-12-15 09:47:07.207  INFO 7164 --- [cluster-ClusterId{value='5fd838c309e7d5203b499dbf', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:6}] to localhost:27017
+2020-12-15 09:47:07.218  INFO 7164 --- [cluster-ClusterId{value='5fd838c309e7d5203b499dbf', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 8]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=6225500}
+2020-12-15 09:47:08.291  WARN 7164 --- [restartedMain] .m.c.i.MongoPersistentEntityIndexCreator : Automatic index creation will be disabled by default as of Spring Data MongoDB 3.x.
+	Please use 'MongoMappingContext#setAutoIndexCreation(boolean)' or override 'MongoConfigurationSupport#autoIndexCreation()' to be explicit.
+	However, we recommend setting up indices manually in an application ready block. You may use index derivation there as well.
+
+	> -----------------------------------------------------------------------------------------
+	> @EventListener(ApplicationReadyEvent.class)
+	> public void initIndicesAfterStartup() {
+	>
+	>     IndexOperations indexOps = mongoTemplate.indexOps(DomainType.class);
+	>
+	>     IndexResolver resolver = new MongoPersistentEntityIndexResolver(mongoMappingContext);
+	>     resolver.resolveIndexFor(DomainType.class).forEach(indexOps::ensureIndex);
+	> }
+	> -----------------------------------------------------------------------------------------
+
+2020-12-15 09:47:08.363  INFO 7164 --- [restartedMain] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:7}] to localhost:27017
+2020-12-15 09:47:10.940  INFO 7164 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-15 09:47:11.962  INFO 7164 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-12-15 09:47:12.052  INFO 7164 --- [restartedMain] c.bharuwa.haritkranti.config.Migration   : Migration Script Loaded
+2020-12-15 09:47:12.189  INFO 7164 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-15 09:47:12.203  INFO 7164 --- [restartedMain] c.b.haritkranti.config.SwaggerConfig     : Starting Swagger
+2020-12-15 09:47:12.498  INFO 7164 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4fb28ff, org.springframework.security.web.context.SecurityContextPersistenceFilter@2c06ef5e, org.springframework.security.web.header.HeaderWriterFilter@46bd517, org.springframework.web.filter.CorsFilter@49ce0dbd, org.springframework.security.web.authentication.logout.LogoutFilter@1cc4c388, com.bharuwa.haritkranti.configuration.JwtAuthenticationFilter@5616069f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6688452b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8d2e2e2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2dac34cc, org.springframework.security.web.session.SessionManagementFilter@3ff16821, org.springframework.security.web.access.ExceptionTranslationFilter@63370cb0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7c16060e]
+2020-12-15 09:47:12.515  INFO 7164 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'threadPoolTaskExecutor'
+2020-12-15 09:47:12.894  INFO 7164 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-12-15 09:47:12.927  INFO 7164 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-12-15 09:47:13.009  INFO 7164 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-12-15 09:47:15.534  INFO 7164 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCropGroupsByNameAndTypeUsingGET_1
+2020-12-15 09:47:15.580  INFO 7164 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCropGroupsByNameAndTypeUsingGET_2
+2020-12-15 09:47:15.588  INFO 7164 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCropGroupsByTypeUsingGET_1
+2020-12-15 09:47:15.615  INFO 7164 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getSubCategoryListByPrimaryCategoryNameUsingPOST_1
+2020-12-15 09:47:16.353  INFO 7164 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: storeFarmingTypeUsingPOST_1
+2020-12-15 09:47:16.693  INFO 7164 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getMandiRateUsingGET_1
+2020-12-15 09:47:16.718  INFO 7164 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getMandiRateUsingGET_2
+2020-12-15 09:47:17.582  INFO 7164 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUserCropByIdUsingGET_1
+2020-12-15 09:47:17.659  INFO 7164 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: registerFarmerUsingPOST_1
+2020-12-15 09:47:17.746  INFO 7164 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5000 (http) with context path ''
+2020-12-15 09:47:17.753  INFO 7164 --- [restartedMain] c.b.haritkranti.ArgricultureApplication  : Started ArgricultureApplication in 18.472 seconds (JVM running for 20.472)
+2020-12-15 09:47:17.768  INFO 7164 --- [restartedMain] c.bharuwa.haritkranti.utils.DataLoader   : Loading data...
+2020-12-15 09:47:17.894  INFO 7164 --- [restartedMain] c.b.h.service.impl.LoginServiceImpl      : admin
+2020-12-15 09:47:17.901  INFO 7164 --- [restartedMain] c.b.h.service.impl.LoginServiceImpl      : admin
+2020-12-15 09:47:17.902  INFO 7164 --- [restartedMain] c.bharuwa.haritkranti.utils.DataLoader   : Roles are added
+2020-12-15 09:47:49.391  INFO 7164 --- [http-nio-5000-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-15 09:47:49.391  INFO 7164 --- [http-nio-5000-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-15 09:47:49.401  INFO 7164 --- [http-nio-5000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-12-15 09:47:49.461  WARN 7164 --- [http-nio-5000-exec-2] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 09:47:49.626  WARN 7164 --- [http-nio-5000-exec-3] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 09:47:49.629  WARN 7164 --- [http-nio-5000-exec-7] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 09:47:49.646  WARN 7164 --- [http-nio-5000-exec-6] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 09:47:49.642  WARN 7164 --- [http-nio-5000-exec-1] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 09:47:49.655  WARN 7164 --- [http-nio-5000-exec-10] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 09:47:49.686  WARN 7164 --- [http-nio-5000-exec-4] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 09:47:49.701  WARN 7164 --- [http-nio-5000-exec-5] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 09:47:49.713  WARN 7164 --- [http-nio-5000-exec-10] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 09:47:49.723  WARN 7164 --- [http-nio-5000-exec-8] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 09:47:49.725  WARN 7164 --- [http-nio-5000-exec-2] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 09:47:49.753  WARN 7164 --- [http-nio-5000-exec-7] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 09:47:49.759  WARN 7164 --- [http-nio-5000-exec-6] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 09:47:49.775  WARN 7164 --- [http-nio-5000-exec-1] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 09:47:49.783  WARN 7164 --- [http-nio-5000-exec-8] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 09:47:49.793  WARN 7164 --- [http-nio-5000-exec-5] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 09:47:49.808  WARN 7164 --- [http-nio-5000-exec-7] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 09:47:49.817  WARN 7164 --- [http-nio-5000-exec-9] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 09:47:49.848  WARN 7164 --- [http-nio-5000-exec-10] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 09:47:49.938  WARN 7164 --- [http-nio-5000-exec-2] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 09:47:49.950  WARN 7164 --- [http-nio-5000-exec-6] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 09:47:49.991  WARN 7164 --- [http-nio-5000-exec-4] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 09:47:50.030  WARN 7164 --- [http-nio-5000-exec-7] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 09:47:50.050  WARN 7164 --- [http-nio-5000-exec-3] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 09:47:52.971  WARN 7164 --- [http-nio-5000-exec-5] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 09:48:47.364  WARN 7164 --- [http-nio-5000-exec-1] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 10:00:19.285  WARN 7164 --- [http-nio-5000-exec-7] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 10:00:19.286  WARN 7164 --- [http-nio-5000-exec-3] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 10:00:19.475 ERROR 7164 --- [http-nio-5000-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at com.bharuwa.haritkranti.service.impl.FarmerAppCropServiceImpl.fetchCropNameFromCropYield(FarmerAppCropServiceImpl.java:71) ~[main/:na]
+	at com.bharuwa.haritkranti.service.impl.FarmerAppCropServiceImpl.storeCropDetail(FarmerAppCropServiceImpl.java:80) ~[main/:na]
+	at com.bharuwa.haritkranti.controllers.FarmerAppCropController.storeCropDetail(FarmerAppCropController.java:49) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at com.bharuwa.haritkranti.configuration.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:87) ~[main/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:109) ~[spring-boot-actuator-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2020-12-15 10:01:41.243  WARN 7164 --- [http-nio-5000-exec-1] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 10:03:05.334 ERROR 7164 --- [http-nio-5000-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at com.bharuwa.haritkranti.service.impl.FarmerAppCropServiceImpl.fetchCropNameFromCropYield(FarmerAppCropServiceImpl.java:71) ~[main/:na]
+	at com.bharuwa.haritkranti.service.impl.FarmerAppCropServiceImpl.storeCropDetail(FarmerAppCropServiceImpl.java:80) ~[main/:na]
+	at com.bharuwa.haritkranti.controllers.FarmerAppCropController.storeCropDetail(FarmerAppCropController.java:49) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at com.bharuwa.haritkranti.configuration.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:87) ~[main/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:109) ~[spring-boot-actuator-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2020-12-15 10:12:42.175  INFO 5416 --- [restartedMain] c.b.haritkranti.ArgricultureApplication  : Starting ArgricultureApplication on DESKTOP-LEH98UK with PID 5416 (D:\workspace\haritkranti\bin\main started by User in D:\workspace\haritkranti)
+2020-12-15 10:12:42.179  INFO 5416 --- [restartedMain] c.b.haritkranti.ArgricultureApplication  : The following profiles are active: dev
+2020-12-15 10:12:42.268  INFO 5416 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\User\.gradle\caches\modules-2\files-2.1\org.glassfish.hk2\hk2\2.6.1\3b971d09e8b3d0a34c7b96cddb920164f99430d4\hk2-2.6.1.jar referenced one or more files that do not exist: file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/hk2-utils.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/jakarta.annotation-api.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/jakarta.inject.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/hk2-api.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/aopalliance-repackaged.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/hk2-core.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/hk2-locator.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/javassist.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/hk2-runlevel.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/class-model.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/asm.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/asm-analysis.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/asm-commons.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/asm-tree.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/asm-util.jar
+2020-12-15 10:12:42.269  INFO 5416 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-15 10:12:42.270  INFO 5416 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-15 10:12:44.153  INFO 5416 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-12-15 10:12:44.594  INFO 5416 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 433ms. Found 71 MongoDB repository interfaces.
+2020-12-15 10:12:45.331  INFO 5416 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 10:12:45.341  INFO 5416 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 10:12:45.344  INFO 5416 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@698d51c4' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 10:12:45.348  INFO 5416 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 10:12:45.353  INFO 5416 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 10:12:46.306  INFO 5416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (http)
+2020-12-15 10:12:46.332  INFO 5416 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-15 10:12:46.332  INFO 5416 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-12-15 10:12:46.576  INFO 5416 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-15 10:12:46.577  INFO 5416 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4306 ms
+2020-12-15 10:12:47.258  INFO 5416 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[172.16.70.4:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-12-15 10:12:47.260  INFO 5416 --- [restartedMain] org.mongodb.driver.cluster               : Adding discovered server 172.16.70.4:27017 to client view of cluster
+2020-12-15 10:12:47.483  INFO 5416 --- [cluster-ClusterId{value='5fd83ec77e0983484c45847e', description='null'}-172.16.70.4:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:831}] to 172.16.70.4:27017
+2020-12-15 10:12:47.541  INFO 5416 --- [cluster-ClusterId{value='5fd83ec77e0983484c45847e', description='null'}-172.16.70.4:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=172.16.70.4:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 1]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=42003900}
+2020-12-15 10:12:47.544  INFO 5416 --- [cluster-ClusterId{value='5fd83ec77e0983484c45847e', description='null'}-172.16.70.4:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2020-12-15 10:12:48.354  WARN 5416 --- [restartedMain] .m.c.i.MongoPersistentEntityIndexCreator : Automatic index creation will be disabled by default as of Spring Data MongoDB 3.x.
+	Please use 'MongoMappingContext#setAutoIndexCreation(boolean)' or override 'MongoConfigurationSupport#autoIndexCreation()' to be explicit.
+	However, we recommend setting up indices manually in an application ready block. You may use index derivation there as well.
+
+	> -----------------------------------------------------------------------------------------
+	> @EventListener(ApplicationReadyEvent.class)
+	> public void initIndicesAfterStartup() {
+	>
+	>     IndexOperations indexOps = mongoTemplate.indexOps(DomainType.class);
+	>
+	>     IndexResolver resolver = new MongoPersistentEntityIndexResolver(mongoMappingContext);
+	>     resolver.resolveIndexFor(DomainType.class).forEach(indexOps::ensureIndex);
+	> }
+	> -----------------------------------------------------------------------------------------
+
+2020-12-15 10:12:48.522  INFO 5416 --- [restartedMain] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:832}] to 172.16.70.4:27017
+2020-12-15 10:12:59.248  INFO 5416 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-15 10:13:00.147  INFO 5416 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-12-15 10:13:00.223  INFO 5416 --- [restartedMain] c.bharuwa.haritkranti.config.Migration   : Migration Script Loaded
+2020-12-15 10:13:00.405  INFO 5416 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-15 10:13:00.418  INFO 5416 --- [restartedMain] c.b.haritkranti.config.SwaggerConfig     : Starting Swagger
+2020-12-15 10:13:00.672  INFO 5416 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@db5ec2e, org.springframework.security.web.context.SecurityContextPersistenceFilter@42052fe, org.springframework.security.web.header.HeaderWriterFilter@267cbac7, org.springframework.web.filter.CorsFilter@6621fb3b, org.springframework.security.web.authentication.logout.LogoutFilter@25c2c7d7, com.bharuwa.haritkranti.configuration.JwtAuthenticationFilter@4f35de80, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5af5a40e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7846a4de, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e0bf570, org.springframework.security.web.session.SessionManagementFilter@5bc8520b, org.springframework.security.web.access.ExceptionTranslationFilter@7cb04a8d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@56708d14]
+2020-12-15 10:13:00.685  INFO 5416 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'threadPoolTaskExecutor'
+2020-12-15 10:13:00.999  INFO 5416 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-12-15 10:13:01.038  INFO 5416 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-12-15 10:13:01.117  INFO 5416 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-12-15 10:13:03.101  INFO 5416 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCropGroupsByNameAndTypeUsingGET_1
+2020-12-15 10:13:03.136  INFO 5416 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCropGroupsByNameAndTypeUsingGET_2
+2020-12-15 10:13:03.140  INFO 5416 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCropGroupsByTypeUsingGET_1
+2020-12-15 10:13:03.157  INFO 5416 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getSubCategoryListByPrimaryCategoryNameUsingPOST_1
+2020-12-15 10:13:03.724  INFO 5416 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: storeFarmingTypeUsingPOST_1
+2020-12-15 10:13:03.978  INFO 5416 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getMandiRateUsingGET_1
+2020-12-15 10:13:03.999  INFO 5416 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getMandiRateUsingGET_2
+2020-12-15 10:13:04.614  INFO 5416 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUserCropByIdUsingGET_1
+2020-12-15 10:13:04.668  INFO 5416 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: registerFarmerUsingPOST_1
+2020-12-15 10:13:04.725  INFO 5416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5000 (http) with context path ''
+2020-12-15 10:13:04.729  INFO 5416 --- [restartedMain] c.b.haritkranti.ArgricultureApplication  : Started ArgricultureApplication in 23.136 seconds (JVM running for 24.103)
+2020-12-15 10:13:04.737  INFO 5416 --- [restartedMain] c.bharuwa.haritkranti.utils.DataLoader   : Loading data...
+2020-12-15 10:13:05.357  INFO 5416 --- [restartedMain] c.b.h.service.impl.LoginServiceImpl      : admin
+2020-12-15 10:13:05.438  INFO 5416 --- [restartedMain] c.b.h.service.impl.LoginServiceImpl      : admin
+2020-12-15 10:13:05.438  INFO 5416 --- [restartedMain] c.bharuwa.haritkranti.utils.DataLoader   : Roles are added
+2020-12-15 10:21:01.767  INFO 5416 --- [http-nio-5000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-15 10:21:01.768  INFO 5416 --- [http-nio-5000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-15 10:21:01.778  INFO 5416 --- [http-nio-5000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-12-15 10:21:01.804  WARN 5416 --- [http-nio-5000-exec-1] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 11:22:53.931  INFO 8372 --- [restartedMain] c.b.haritkranti.ArgricultureApplication  : Starting ArgricultureApplication on DESKTOP-LEH98UK with PID 8372 (D:\workspace\haritkranti\bin\main started by User in D:\workspace\haritkranti)
+2020-12-15 11:22:53.939  INFO 8372 --- [restartedMain] c.b.haritkranti.ArgricultureApplication  : The following profiles are active: dev
+2020-12-15 11:22:54.030  INFO 8372 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\User\.gradle\caches\modules-2\files-2.1\org.glassfish.hk2\hk2\2.6.1\3b971d09e8b3d0a34c7b96cddb920164f99430d4\hk2-2.6.1.jar referenced one or more files that do not exist: file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/hk2-utils.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/jakarta.annotation-api.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/jakarta.inject.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/hk2-api.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/aopalliance-repackaged.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/hk2-core.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/hk2-locator.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/javassist.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/hk2-runlevel.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/class-model.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/asm.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/asm-analysis.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/asm-commons.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/asm-tree.jar,file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.6.1/3b971d09e8b3d0a34c7b96cddb920164f99430d4/asm-util.jar
+2020-12-15 11:22:54.032  INFO 8372 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-15 11:22:54.032  INFO 8372 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-15 11:22:55.807  INFO 8372 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-12-15 11:22:56.101  INFO 8372 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 288ms. Found 71 MongoDB repository interfaces.
+2020-12-15 11:22:56.830  INFO 8372 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 11:22:56.839  INFO 8372 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 11:22:56.841  INFO 8372 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7229f12d' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 11:22:56.842  INFO 8372 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 11:22:56.847  INFO 8372 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-15 11:22:57.631  INFO 8372 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (http)
+2020-12-15 11:22:57.649  INFO 8372 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-15 11:22:57.650  INFO 8372 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-12-15 11:22:57.841  INFO 8372 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-15 11:22:57.841  INFO 8372 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3809 ms
+2020-12-15 11:22:58.364  INFO 8372 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[172.16.70.4:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-12-15 11:22:58.364  INFO 8372 --- [restartedMain] org.mongodb.driver.cluster               : Adding discovered server 172.16.70.4:27017 to client view of cluster
+2020-12-15 11:22:58.572  INFO 8372 --- [cluster-ClusterId{value='5fd84f3a27934e3a1794a48f', description='null'}-172.16.70.4:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:838}] to 172.16.70.4:27017
+2020-12-15 11:22:58.617  INFO 8372 --- [cluster-ClusterId{value='5fd84f3a27934e3a1794a48f', description='null'}-172.16.70.4:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=172.16.70.4:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 1]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=40363600}
+2020-12-15 11:22:58.619  INFO 8372 --- [cluster-ClusterId{value='5fd84f3a27934e3a1794a48f', description='null'}-172.16.70.4:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2020-12-15 11:22:59.393  WARN 8372 --- [restartedMain] .m.c.i.MongoPersistentEntityIndexCreator : Automatic index creation will be disabled by default as of Spring Data MongoDB 3.x.
+	Please use 'MongoMappingContext#setAutoIndexCreation(boolean)' or override 'MongoConfigurationSupport#autoIndexCreation()' to be explicit.
+	However, we recommend setting up indices manually in an application ready block. You may use index derivation there as well.
+
+	> -----------------------------------------------------------------------------------------
+	> @EventListener(ApplicationReadyEvent.class)
+	> public void initIndicesAfterStartup() {
+	>
+	>     IndexOperations indexOps = mongoTemplate.indexOps(DomainType.class);
+	>
+	>     IndexResolver resolver = new MongoPersistentEntityIndexResolver(mongoMappingContext);
+	>     resolver.resolveIndexFor(DomainType.class).forEach(indexOps::ensureIndex);
+	> }
+	> -----------------------------------------------------------------------------------------
+
+2020-12-15 11:22:59.554  INFO 8372 --- [restartedMain] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:839}] to 172.16.70.4:27017
+2020-12-15 11:23:10.885  INFO 8372 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-15 11:23:11.727  INFO 8372 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-12-15 11:23:11.804  INFO 8372 --- [restartedMain] c.bharuwa.haritkranti.config.Migration   : Migration Script Loaded
+2020-12-15 11:23:11.986  INFO 8372 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-15 11:23:12.000  INFO 8372 --- [restartedMain] c.b.haritkranti.config.SwaggerConfig     : Starting Swagger
+2020-12-15 11:23:12.246  INFO 8372 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d6b4d83, org.springframework.security.web.context.SecurityContextPersistenceFilter@659df5a0, org.springframework.security.web.header.HeaderWriterFilter@1bc98296, org.springframework.web.filter.CorsFilter@8096abe, org.springframework.security.web.authentication.logout.LogoutFilter@12eca84f, com.bharuwa.haritkranti.configuration.JwtAuthenticationFilter@475247e4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@797b33f4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d9c4157, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3e7fcf5c, org.springframework.security.web.session.SessionManagementFilter@7dd09633, org.springframework.security.web.access.ExceptionTranslationFilter@7789248d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@48761d05]
+2020-12-15 11:23:12.261  INFO 8372 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'threadPoolTaskExecutor'
+2020-12-15 11:23:12.597  INFO 8372 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-12-15 11:23:12.633  INFO 8372 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-12-15 11:23:12.706  INFO 8372 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-12-15 11:23:14.462  INFO 8372 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCropGroupsByNameAndTypeUsingGET_1
+2020-12-15 11:23:14.487  INFO 8372 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCropGroupsByNameAndTypeUsingGET_2
+2020-12-15 11:23:14.491  INFO 8372 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCropGroupsByTypeUsingGET_1
+2020-12-15 11:23:14.505  INFO 8372 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getSubCategoryListByPrimaryCategoryNameUsingPOST_1
+2020-12-15 11:23:15.015  INFO 8372 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: storeFarmingTypeUsingPOST_1
+2020-12-15 11:23:15.220  INFO 8372 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getMandiRateUsingGET_1
+2020-12-15 11:23:15.235  INFO 8372 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getMandiRateUsingGET_2
+2020-12-15 11:23:15.837  INFO 8372 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUserCropByIdUsingGET_1
+2020-12-15 11:23:15.899  INFO 8372 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: registerFarmerUsingPOST_1
+2020-12-15 11:23:15.965  INFO 8372 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5000 (http) with context path ''
+2020-12-15 11:23:15.970  INFO 8372 --- [restartedMain] c.b.haritkranti.ArgricultureApplication  : Started ArgricultureApplication in 22.7 seconds (JVM running for 23.791)
+2020-12-15 11:23:15.977  INFO 8372 --- [restartedMain] c.bharuwa.haritkranti.utils.DataLoader   : Loading data...
+2020-12-15 11:23:16.579  INFO 8372 --- [restartedMain] c.b.h.service.impl.LoginServiceImpl      : admin
+2020-12-15 11:23:16.656  INFO 8372 --- [restartedMain] c.b.h.service.impl.LoginServiceImpl      : admin
+2020-12-15 11:23:16.656  INFO 8372 --- [restartedMain] c.bharuwa.haritkranti.utils.DataLoader   : Roles are added
+2020-12-15 11:25:24.496  INFO 8372 --- [http-nio-5000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-15 11:25:24.535  INFO 8372 --- [http-nio-5000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-15 11:25:30.853  INFO 8372 --- [http-nio-5000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6285 ms
+2020-12-15 11:25:38.367  WARN 8372 --- [http-nio-5000-exec-1] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 11:31:27.013  WARN 8372 --- [http-nio-5000-exec-5] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 11:39:46.738  INFO 8372 --- [cluster-ClusterId{value='5fd84f3a27934e3a1794a48f', description='null'}-172.16.70.4:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server 172.16.70.4:27017
+
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70) ~[mongodb-driver-core-3.11.2.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128) ~[mongodb-driver-core-3.11.2.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131) ~[mongodb-driver-core-3.11.2.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.net.NoRouteToHostException: No route to host: connect
+	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method) ~[na:na]
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:591) ~[na:na]
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64) ~[mongodb-driver-core-3.11.2.jar:na]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79) ~[mongodb-driver-core-3.11.2.jar:na]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65) ~[mongodb-driver-core-3.11.2.jar:na]
+	... 3 common frames omitted
+
+2020-12-15 11:45:24.596  WARN 8372 --- [http-nio-5000-exec-4] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 11:45:24.699  WARN 8372 --- [http-nio-5000-exec-9] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 11:45:24.700  WARN 8372 --- [http-nio-5000-exec-6] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 11:45:24.700  WARN 8372 --- [http-nio-5000-exec-7] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 11:45:24.733  WARN 8372 --- [http-nio-5000-exec-8] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 11:45:24.734  WARN 8372 --- [http-nio-5000-exec-10] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 11:45:24.773  WARN 8372 --- [http-nio-5000-exec-1] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 11:45:24.786  WARN 8372 --- [http-nio-5000-exec-2] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 11:45:24.792  WARN 8372 --- [http-nio-5000-exec-5] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 11:45:24.829  WARN 8372 --- [http-nio-5000-exec-4] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 11:45:24.830  WARN 8372 --- [http-nio-5000-exec-3] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 11:45:24.832  WARN 8372 --- [http-nio-5000-exec-9] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 11:45:24.855  WARN 8372 --- [http-nio-5000-exec-7] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 11:45:24.863  WARN 8372 --- [http-nio-5000-exec-8] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 11:45:24.891  WARN 8372 --- [http-nio-5000-exec-10] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 11:45:24.919  WARN 8372 --- [http-nio-5000-exec-6] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 11:45:24.919  WARN 8372 --- [http-nio-5000-exec-1] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 11:45:24.943  WARN 8372 --- [http-nio-5000-exec-2] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 11:45:24.953  WARN 8372 --- [http-nio-5000-exec-5] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 11:45:25.046  WARN 8372 --- [http-nio-5000-exec-4] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 11:45:25.057  WARN 8372 --- [http-nio-5000-exec-9] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 11:45:25.136  WARN 8372 --- [http-nio-5000-exec-3] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 11:45:28.179  WARN 8372 --- [http-nio-5000-exec-8] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 11:45:28.202  WARN 8372 --- [http-nio-5000-exec-7] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 11:45:31.630  WARN 8372 --- [http-nio-5000-exec-10] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header
+2020-12-15 11:45:35.818  WARN 8372 --- [http-nio-5000-exec-1] c.b.h.c.JwtAuthenticationFilter          : couldn't find bearer string, will ignore the header

@@ -1,0 +1,1 @@
+Bid system controller,model,service,serviceimpl etc is deleted.
